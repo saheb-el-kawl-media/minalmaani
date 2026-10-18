@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="من معاني الآية · ﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا﴾">
+<meta property="og:description" content="لن يغلب عسرٌ يسرين: معاني الكلمات، ولطائف ستة مفسرين، والآثار، واختبار، وغرسة عملية.">
+<meta property="og:image" content="https://saheb-el-kawl-media.github.io/minalmaani/og_yusra.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saheb-el-kawl-media.github.io/minalmaani/yusra.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="من معاني الآية · ﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا﴾">
+<meta name="twitter:description" content="لن يغلب عسرٌ يسرين: معاني الكلمات، ولطائف ستة مفسرين، والآثار، واختبار، وغرسة عملية.">
+<meta name="twitter:image" content="https://saheb-el-kawl-media.github.io/minalmaani/og_yusra.png">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>إن مع العسر يسرًا</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Marhey:wght@500;700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+/* Layout: one reading column like a manuscript page; the verse is the hero, each section is a station of reflection */
+:root{
+  --bg:#F2F5F3; --surface:#FFFFFF; --soft:#E4ECE8; --fg:#1C2726; --muted:#56635F;
+  --teal:#0E6E6F; --gold:#9C7A1E; --goldline:#C9A43F; --ok:#2D7A4C; --bad:#B4473A;
+  --verse:"Amiri","Traditional Arabic",serif;
+  --display:"Marhey","Tajawal",sans-serif;
+  --body:"Tajawal","Segoe UI",Tahoma,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111816; --surface:#19221F; --soft:#22302C; --fg:#E6EDE9; --muted:#A3B2AC;
+  --teal:#5DB9B4; --gold:#D8B65C; --goldline:#B8953A; --ok:#6CC08F; --bad:#E58A7D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111816; --surface:#19221F; --soft:#22302C; --fg:#E6EDE9; --muted:#A3B2AC;
+  --teal:#5DB9B4; --gold:#D8B65C; --goldline:#B8953A; --ok:#6CC08F; --bad:#E58A7D; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.9;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:760px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.4;text-wrap:balance;margin:0}
+h2{font-size:1.55rem;color:var(--teal)}
+.eyebrow{font-family:var(--display);font-size:.85rem;color:var(--gold);letter-spacing:.02em}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;flex-direction:column;gap:4px}
+
+/* hero */
+.hero{text-align:center;gap:22px;padding-block:24px 8px;border-bottom:1px solid var(--goldline)}
+.hero .series{font-family:var(--display);color:var(--muted);font-size:.95rem}
+.verse{font-family:var(--verse);font-size:clamp(1.7rem,5.2vw,2.5rem);line-height:2.1;color:var(--fg);margin:0}
+.verse .key{color:var(--teal)}
+.anum{display:inline-flex;align-items:center;justify-content:center;width:1.2em;height:1.2em;border:2px solid var(--goldline);border-radius:50%;font-size:.5em;color:var(--gold);vertical-align:middle;line-height:1}
+#words{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.ref{font-family:var(--display);color:var(--gold);font-size:.95rem}
+.lead{color:var(--muted);max-width:58ch;margin:0 auto}
+
+/* words */
+.words{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.word{background:var(--surface);border:1px solid var(--soft);border-radius:14px;padding:16px;text-align:right;
+  cursor:pointer;font:inherit;color:inherit;display:flex;flex-direction:column;gap:8px;min-height:96px}
+.word:hover{border-color:var(--teal)}
+.word:focus-visible,.tab:focus-visible,.opt:focus-visible,.btn:focus-visible,.pick:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.word .w{font-family:var(--verse);font-size:1.5rem;color:var(--teal);line-height:1.5}
+.word .hint{font-size:.85rem;color:var(--muted)}
+.word .m{font-size:.98rem}
+
+/* tafsir tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{font-family:var(--display);font-size:.95rem;border:1px solid var(--soft);background:var(--surface);color:var(--fg);
+  padding:6px 16px;border-radius:999px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:var(--bg)}
+.panel{background:var(--surface);border-radius:16px;padding:22px;border-right:4px solid var(--goldline);display:flex;flex-direction:column;gap:10px}
+.panel h3{font-size:1.15rem}
+.panel .tag{font-size:.85rem;color:var(--gold);font-family:var(--display)}
+
+/* athar */
+.athar{display:flex;flex-direction:column;gap:14px}
+.athar figure{margin:0;padding:18px 20px;background:var(--surface);border-radius:14px;display:flex;flex-direction:column;gap:6px}
+.athar blockquote{margin:0;font-family:var(--verse);font-size:1.3rem;line-height:1.9}
+.athar figcaption{font-size:.88rem;color:var(--muted)}
+
+/* lessons */
+.lessons{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.lessons li{padding:18px;border:1px solid var(--soft);border-radius:14px;display:flex;flex-direction:column;gap:6px}
+.lessons strong{font-family:var(--display);color:var(--teal);font-size:1.05rem;font-weight:700}
+
+/* quiz */
+.quiz{background:var(--surface);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:16px}
+.qmeta{display:flex;justify-content:space-between;font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.qtext{font-family:var(--display);font-size:1.15rem}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{text-align:right;font:inherit;color:var(--fg);background:var(--bg);border:2px solid var(--soft);border-radius:12px;padding:10px 14px;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--teal)}
+.opt.right{border-color:var(--ok);color:var(--ok);font-weight:700}
+.opt.wrong{border-color:var(--bad);color:var(--bad)}
+.opt:disabled{cursor:default}
+.feedback{font-size:.97rem;color:var(--muted);min-height:1.5em}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{font-family:var(--display);font-size:.95rem;background:var(--teal);color:var(--bg);border:0;border-radius:999px;padding:8px 22px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+
+/* commitment */
+.picks{display:flex;flex-direction:column;gap:10px}
+.pick{display:flex;gap:12px;align-items:flex-start;text-align:right;font:inherit;color:var(--fg);background:var(--surface);
+  border:2px solid var(--soft);border-radius:14px;padding:14px 16px;cursor:pointer}
+.pick .dot{flex:0 0 18px;height:18px;border-radius:50%;border:2px solid var(--goldline);margin-top:6px}
+.pick[aria-pressed="true"]{border-color:var(--gold)}
+.pick[aria-pressed="true"] .dot{background:var(--gold)}
+.pledge{font-family:var(--verse);font-size:1.25rem;color:var(--gold);text-align:center;min-height:1.6em}
+
+footer{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;color:var(--muted);font-size:.88rem;border-top:1px solid var(--goldline);padding-top:28px}
+footer svg{width:86px;height:86px}
+@media (prefers-reduced-motion:no-preference){.panel,.m{animation:fade .35s ease}}
+@keyframes fade{from{opacity:.25}to{opacity:1}}
+</style>
+
+</head>
+<body>
+<main dir="rtl" lang="ar">
+
+<header class="hero" style="display:flex;flex-direction:column">
+  <p class="series">من معاني الآية</p>
+  <p class="verse">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا <span class="anum">٥</span> <span class="key">إِنَّ مَعَ الْعُسْرِ يُسْرًا</span> <span class="anum">٦</span></p>
+  <p class="ref">سورة الشرح · الآيتان ٥ و٦</p>
+  <p class="lead">وعدٌ من الله تكرّر مرتين ليطمئن القلب: كل ضيقٍ يصحبه فرج، والفرج قريبٌ حتى كأنه مع الشدة نفسها، ولن يغلب عسرٌ يسرين.</p>
+</header>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">المحطة الأولى</span><h2>المعنى الإجمالي</h2></div>
+  <p>أجمعت التفاسير على أن الآيتين وعدٌ إلهيٌّ وثيق وبشارةٌ جليلة للنبي ﷺ وللمؤمنين من بعده: أن كل ضائقةٍ أو شدةٍ تمرّ بالإنسان، وهي «العسر»، يقارنها ويعقبها من الله تيسيرٌ وفرجٌ وسعة، وهو «اليسر». فالفرج ملازمٌ للكرب، ولا يدوم ضيقٌ إلا ويحلّ بعده الفرج لا محالة.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">المحطة الثانية</span><h2>كلماتٌ تفتح المعنى</h2><p style="color:var(--muted)">اضغط على كل كلمة لتكشف معناها.</p></div>
+  <div class="words" id="words"></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">المحطة الثالثة</span><h2>ماذا رأى كل مفسّر؟</h2><p style="color:var(--muted)">لكل تفسير لطيفةٌ انفرد بها. اختر مفسّرًا.</p></div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div class="panel" role="tabpanel" id="panel" aria-live="polite"></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">المحطة الرابعة</span><h2>من السنّة والآثار</h2></div>
+  <div class="athar">
+    <figure><blockquote>«أَبْشِرُوا، أَتَاكُمُ الْيُسْرُ، لَنْ يَغْلِبَ عُسْرٌ يُسْرَيْنِ»</blockquote><figcaption>رُوي أن النبي ﷺ خرج يومًا مسرورًا يضحك وهو يقولها ويتلو الآيتين. أورده المفسرون، ويُروى مرسلًا عن الحسن البصري</figcaption></figure>
+    <figure><blockquote>«إِنَّهُ مَهْمَا يَنْزِلْ بِعَبْدٍ مُؤْمِنٍ مِنْ مُنْزَلِ شِدَّةٍ، يَجْعَلِ اللَّهُ بَعْدَهُ فَرَجًا، وَإِنَّهُ لَنْ يَغْلِبَ عُسْرٌ يُسْرَيْنِ»</blockquote><figcaption>من كتاب عمر بن الخطاب إلى أبي عبيدة بن الجراح رضي الله عنهما حين خاف جموع الروم</figcaption></figure>
+    <figure><blockquote>«وَالَّذِي نَفْسِي بِيَدِهِ، لَوْ كَانَ الْعُسْرُ فِي جُحْرٍ لَطَلَبَهُ الْيُسْرُ حَتَّى يَدْخُلَ عَلَيْهِ فَيُخْرِجَهُ، وَلَنْ يَغْلِبَ عُسْرٌ يُسْرَيْنِ»</blockquote><figcaption>أثرٌ عن عبد الله بن مسعود رضي الله عنه. ورُوي نحوه عن أنس مرفوعًا، وفي إسناده ضعف</figcaption></figure>
+    <figure><blockquote>«خَلَقْتُ عُسْرًا وَاحِدًا، وَخَلَقْتُ يُسْرَيْنِ، وَلَنْ يَغْلِبَ عُسْرٌ يُسْرَيْنِ»</blockquote><figcaption>أثرٌ عن عبد الله بن عباس رضي الله عنهما في تفسير الآيتين</figcaption></figure>
+    <figure><blockquote>«تَنْزِلُ الْمَعُونَةُ مِنَ السَّمَاءِ عَلَى قَدْرِ الْمَؤُونَةِ، وَيَنْزِلُ الصَّبْرُ عَلَى قَدْرِ الْمُصِيبَةِ»</blockquote><figcaption>من حديث أبي هريرة رضي الله عنه</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">المحطة الخامسة</span><h2>من الآية إلى الحياة</h2></div>
+  <ul class="lessons">
+    <li><strong>الثبات وترك اليأس</strong><span>لا تُثني مشاقُّ الحياة ولا أذى الناس المؤمنَ عن عمله ورسالته، لأنه واثقٌ بوعد الله.</span></li>
+    <li><strong>الصبر والتوكل</strong><span>تُقابَل الشدائد بالصبر الجميل، والاعتصام بالله، والإيمان بقضائه وقدره.</span></li>
+    <li><strong>حسن الظن بالله</strong><span>مهما اشتدّ الكرب فانفراجه قريبٌ جدًا، حتى كأنه مقرونٌ به.</span></li>
+    <li><strong>فرجٌ مضاعف</strong><span>جعل الله مع كل ضيقٍ في الدنيا يسرين: فرجًا في الدنيا، وثوابًا ويسرًا في الآخرة.</span></li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">المحطة السادسة</span><h2>اختبر فهمك</h2></div>
+  <div class="quiz" id="quiz"></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">المحطة الأخيرة</span><h2>غرستي من هذه الآية</h2><p style="color:var(--muted)">اختر عملًا واحدًا تبدأ به هذا الأسبوع.</p></div>
+  <div class="picks" id="picks"></div>
+  <p class="pledge" id="pledge"></p>
+  <div class="row" style="justify-content:center"><button class="btn ghost" id="copy" type="button">انسخ الدعاء وشاركه مع أحبابك</button></div>
+</section>
+
+<footer>
+  <svg viewBox="0 0 120 120" role="img" aria-label="ختم صاحب القول">
+    <circle cx="60" cy="60" r="58" fill="#111"/>
+    <circle cx="60" cy="60" r="52" fill="none" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="60" cy="60" r="46" fill="none" stroke="#D4AF37" stroke-width="1"/>
+    <g fill="#D4AF37" id="dots"></g>
+    <text x="60" y="56" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#D4AF37" letter-spacing="2">SAHEB</text>
+    <text x="60" y="76" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#D4AF37" letter-spacing="2">EL KAWL</text>
+  </svg>
+  <p>المصادر: تفسير الطبري، تفسير القرطبي، تفسير ابن كثير، التحرير والتنوير لابن عاشور، تفسير السعدي، التفسير الوسيط.</p>
+  <p>صاحب القول</p>
+</footer>
+</main>
+
+<script>
+(function(){
+  var g=document.getElementById('dots');
+  for(var i=0;i<12;i++){var a=i*Math.PI/6,c=document.createElementNS('http://www.w3.org/2000/svg','circle');
+    c.setAttribute('cx',60+49*Math.cos(a));c.setAttribute('cy',60+49*Math.sin(a));c.setAttribute('r',1.8);g.appendChild(c);}
+
+  var words=[
+    ['الْعُسْرِ','الشدة والضيق والفقر، والمشقة في تحصيل المرغوب وإنجاز العمل المقصود.'],
+    ['يُسْرًا','السهولة والفرج والسعة والغنى، ونيل المطلوب بلا تعب.'],
+    ['مَعَ','ظرفٌ يفيد المصاحبة والمقارنة، واستُعير هنا لقرب الفرج ولحوقه بالعسر دون مهلة طويلة.'],
+    ['فَإِنَّ','الفاء فصيحة تُفصح عن شرطٍ مقدَّر، كما بيّن ابن عاشور، و«إنّ» تؤكد الوعد.']
+  ];
+  var wbox=document.getElementById('words');
+  words.forEach(function(w,i){
+    var b=document.createElement('button');b.className='word';b.type='button';b.id='word'+i;b.setAttribute('aria-expanded','false');
+    b.innerHTML='<span class="w">'+w[0]+'</span><span class="hint">اضغط لمعرفة المعنى</span>';
+    b.addEventListener('click',function(){
+      var open=b.getAttribute('aria-expanded')==='true';
+      b.setAttribute('aria-expanded',String(!open));
+      b.lastChild.className=open?'hint':'m';
+      b.lastChild.textContent=open?'اضغط لمعرفة المعنى':w[1];
+    });
+    wbox.appendChild(b);
+  });
+
+  var taf=[
+    ['الطبري','العسر والفتح','بيّن أن «العسر» هو ما لقيه النبي ﷺ في أول الدعوة من شدةٍ ومشقة وأذى المشركين، وأن «اليسر» هو الظفر بهم والفتح، وانقياد الناس للحق طوعًا وكرهًا.'],
+    ['القرطبي','عسرٌ واحد ويسران','ذكر القاعدة اللغوية: إذا ذكرت العرب اسمًا معرّفًا بـ«أل» ثم كررته فهو عين الأول، فالعسر واحد؛ وإذا ذكرت اسمًا نكرة ثم كررته فهو غيره، فاليسر اثنان. ووجّه مجيء الجملة الثانية بلا حرف عطف بأن الأولى وعدٌ بيسر الدنيا العاجل للنبي ﷺ، والثانية استئنافٌ لوعدٍ عامّ بالمغفرة ويسر الآخرة لجميع المؤمنين.'],
+    ['ابن كثير','دلالة التعريف والتنكير','ركّز على تعريف «العسر» وتنكير «اليسر»، وأن العسر مفردٌ واليسر متعدد، وجمع الروايات والآثار الدالة على أن اليسر يدخل على العسر فيُخرجه.'],
+    ['ابن عاشور','«مع» لقرب الفرج','بيّن أن الفاء في ﴿فَإِنَّ﴾ فصيحة تفصح عن شرطٍ مقدّر، وأن التعبير بـ﴿مَعَ﴾ استعارةٌ لقرب حصول اليسر عقب العسر، إذ لا يجتمع النقيضان حقيقة. وأن التعريف في «العسر» للعهد، أي العسر الذي عرض للنبي ﷺ في شؤون الدعوة، وتنكير «يسرًا» للتعظيم والتفخيم.'],
+    ['السعدي','كل عسرٍ مهما بلغ','استنبط أن «أل» في «العسر» تفيد الاستغراق والعموم، فكل عسرٍ مهما بلغ من الصعوبة والشدة فإن التيسير ملازمٌ له في آخره.'],
+    ['الوسيط','لماذا التكرار؟','بيّن أن تكرار الجملة جاء لتقرير الخبر وتأكيده، ودفع الشك عن النفوس حين تتكاثر الهموم والشدائد، وأن التعبير بـ﴿مَعَ﴾ بدل «بعد» يُشعر المؤمن بشدة قرب الفرج.']
+  ];
+  var tabs=document.getElementById('tabs'),panel=document.getElementById('panel');
+  function show(i){
+    Array.prototype.forEach.call(tabs.children,function(t,j){t.setAttribute('aria-selected',String(i===j));t.tabIndex=i===j?0:-1;});
+    panel.innerHTML='<span class="tag">'+taf[i][1]+'</span><h3>'+(taf[i][0]==='الوسيط'?'التفسير الوسيط':'تفسير '+taf[i][0])+'</h3><p>'+taf[i][2]+'</p>';
+  }
+  taf.forEach(function(t,i){
+    var b=document.createElement('button');b.className='tab';b.type='button';b.role='tab';b.id='tab'+i;b.textContent=t[0];
+    b.addEventListener('click',function(){show(i)});
+    b.addEventListener('keydown',function(e){
+      var n=e.key==='ArrowLeft'?1:e.key==='ArrowRight'?-1:0;
+      if(n){var k=(i+n+taf.length)%taf.length;show(k);tabs.children[k].focus();}
+    });
+    tabs.appendChild(b);
+  });
+  show(0);
+
+  var qs=[
+    ['كم «عسرًا» وكم «يسرًا» في الآيتين بحسب القاعدة التي ذكرها القرطبي وابن كثير؟',['عسران ويسر واحد','عسرٌ واحد ويسران','عسران ويسران'],1,'«العسر» معرّف بـ«أل» فتكراره يعني العسر نفسه، و«يسرًا» نكرة فتكراره يعني يسرًا آخر؛ ولذلك «لن يغلب عسرٌ يسرين».'],
+    ['لماذا قال الله ﴿مَعَ الْعُسْرِ﴾ ولم يقل «بعد العسر»؟',['لأن العسر لا ينتهي','ليُشعر بقرب الفرج الشديد','لأن الكلمتين بمعنى واحد'],1,'التعبير بـ«مع» يُشعر بأن الفرج قريبٌ جدًا، حتى كأنه مصاحبٌ للشدة نفسها.'],
+    ['ما الحكمة من تكرار الجملة مرتين بحسب التفسير الوسيط؟',['تقرير الوعد وتأكيده ودفع الشك عن النفوس','تعليم القراءة','الفصل بين سورتين'],0,'التكرار يقرّر الخبر ويثبّته في القلب حين تتكاثر الهموم.'],
+    ['إلى أي شيء يشير تنكير «يسرًا» عند ابن عاشور؟',['التقليل','التعظيم والتفخيم','الشك'],1,'التنكير هنا للتعظيم، أي يسرٌ عظيم.'],
+    ['ماذا استنبط السعدي من «أل» في «العسر»؟',['أنها لعسرٍ واحدٍ في الماضي فقط','أنها تفيد العموم، فكل عسرٍ يلازمه تيسير','أنها زائدة لا معنى لها'],1,'«أل» للاستغراق: كل عسرٍ مهما اشتدّ فإن التيسير ملازمٌ له في آخره.']
+  ];
+  var quiz=document.getElementById('quiz'),qi=0,score=0;
+  function render(){
+    if(qi>=qs.length){
+      var msg=score===qs.length?'أحسنت! فهمٌ متين، يسّر الله أمرك.':score>=3?'جميل! راجع المحطات التي فاتتك وستكتمل الصورة.':'لا بأس، فمع العسر يسر. أعد القراءة ثم جرّب مرة أخرى.';
+      quiz.innerHTML='<p class="qtext">نتيجتك: '+score+' من '+qs.length+'</p><p>'+msg+'</p><div class="row"><button class="btn" type="button" id="again">أعد الاختبار</button></div>';
+      document.getElementById('again').onclick=function(){qi=0;score=0;render();};
+      return;
+    }
+    var q=qs[qi];
+    quiz.innerHTML='<div class="qmeta"><span>السؤال '+(qi+1)+' من '+qs.length+'</span><span>النقاط: '+score+'</span></div><p class="qtext">'+q[0]+'</p><div class="opts"></div><p class="feedback" aria-live="polite"></p><div class="row"></div>';
+    var opts=quiz.querySelector('.opts'),fb=quiz.querySelector('.feedback'),row=quiz.querySelector('.row');
+    q[1].forEach(function(o,j){
+      var b=document.createElement('button');b.className='opt';b.type='button';b.id='q'+qi+'o'+j;b.textContent=o;
+      b.onclick=function(){
+        Array.prototype.forEach.call(opts.children,function(x){x.disabled=true;});
+        opts.children[q[2]].classList.add('right');
+        if(j===q[2]){score++;fb.textContent='إجابة صحيحة. '+q[3];}
+        else{b.classList.add('wrong');fb.textContent='ليست هذه. '+q[3];}
+        var n=document.createElement('button');n.className='btn';n.type='button';n.textContent=qi<qs.length-1?'السؤال التالي':'اعرض النتيجة';
+        n.onclick=function(){qi++;render();};row.appendChild(n);n.focus();
+      };
+      opts.appendChild(b);
+    });
+  }
+  render();
+
+  var picks=[
+    'إذا ضاق صدري أقرأ الآيتين وأذكّر نفسي: لن يغلب عسرٌ يسرين.',
+    'أكتب كل مساء ثلاث نعمٍ يسّرها الله لي في يومي.',
+    'أواسي صديقًا مهمومًا وأبشّره بوعد الله.',
+    'أصبر على عملٍ صعبٍ ولا أتركه، وأدعو الله أن ييسّره.'
+  ];
+  var pbox=document.getElementById('picks'),pledge=document.getElementById('pledge'),saved=null;
+  try{saved=localStorage.getItem('yusra_pick');}catch(e){}
+  function setPick(i){
+    Array.prototype.forEach.call(pbox.children,function(b,j){b.setAttribute('aria-pressed',String(i===j));});
+    pledge.textContent=i==null?'':'اللهم يسّر لي أمري، وأعنّي على ما عزمت عليه.';
+    try{localStorage.setItem('yusra_pick',String(i));}catch(e){}
+  }
+  picks.forEach(function(p,i){
+    var b=document.createElement('button');b.className='pick';b.type='button';b.id='pick'+i;b.setAttribute('aria-pressed','false');
+    b.innerHTML='<span class="dot"></span><span>'+p+'</span>';
+    b.onclick=function(){setPick(i)};pbox.appendChild(b);
+  });
+  if(saved!==null&&picks[+saved])setPick(+saved);
+
+  var copyBtn=document.getElementById('copy'),label=copyBtn.textContent;
+  copyBtn.onclick=function(){
+    var t='﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا * إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ [الشرح: 5-6]\nاللهم لا سهل إلا ما جعلته سهلًا، وأنت تجعل الحزن إذا شئت سهلًا.';
+    function done(){copyBtn.textContent='نُسخ الدعاء';setTimeout(function(){copyBtn.textContent=label},2000);}
+    try{navigator.clipboard.writeText(t).then(done,function(){pledge.textContent=t;});}catch(e){pledge.textContent=t;}
+  };
+})();
+</script>
+</body></html>
